@@ -8,9 +8,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index.html</title>
+    <link rel="stylesheet" href="style.css">
+    <title>RacconCSS</title>
 </head>
 <body>
+    <h1>Hello</h1>
     <p>This is my first page.</p>
 </body>
 </html>
@@ -34,4 +36,38 @@ CSS (_Cascading Style Sheets_) to język służący do stylizowania i formatowan
 - `width` i `height` – określają szerokość i wysokość elementu.
 - `border` – dodaje ramkę wokół elementu.
 
+## Selektory:
 
+Selektory w CSS to mechanizm, który pozwala na wybranie i stylizowanie określonych elementów HTML na stronie. Dzięki selektorom możesz wskazać, które elementy mają być poddane danym stylom, i określić, jakie właściwości mają zostać im przypisane.
+
+### Rodzaje selektorów CSS:
+
+1. **Selektor elementu** (typowy selektor) - wybiera wszystkie elementy określonego typu. Przykład:
+```css
+p {
+    color: blue;
+}
+```
+
+2. **Selektor klasy** - wybiera elementy, które mają określoną klasę. Klasy są oznaczane kropką `.`. Przykład:
+```css
+.button {
+    color: blue;
+}
+```
+
+3. **Selektor identyfikatora** (ID) - wybiera element o określonym identyfikatorze. Identyfikatory są oznaczane hashtagiem (`#`). Przykład:
+
+```css
+#header {
+    background-color: lightgray;
+}
+```
+
+4. **Selektor atrybutu** - wybiera elementy, które mają określony atrybut. Przykład:
+
+```css
+input[type="text"] {
+    border: 2px solid blue;
+}
+```

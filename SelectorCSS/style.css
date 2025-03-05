@@ -1,0 +1,43 @@
+h1{
+    color:rgb(41, 113, 228);
+    font-size:3rem;
+}
+
+p{
+    color: navy;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 0.5rem;
+}
+
+.button {
+    color: navy;
+    background-color: blanchedalmond;
+    font-size: large;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.button:hover {
+    background-color: rgb(194, 179, 157);
+}
+
+#story {
+    color: navy;
+    background-color:cornflowerblue;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+div[type="story"] {
+    border: 2px solid blue;
+}
+
+div p {
+    background-color: rgb(175, 202, 252);
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
