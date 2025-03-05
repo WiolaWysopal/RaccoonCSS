@@ -1,0 +1,15 @@
+h1{
+    color:forestgreen;
+    background-color:rgb(212, 193, 171);
+    font-size:larger;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+p{
+    color: navy;
+    background-color: blanchedalmond;
+    font-size: large;
+    margin: 1rem;
+    padding: 1rem;
+}
