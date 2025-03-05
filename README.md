@@ -185,3 +185,59 @@ Przykład:
 }
 ```
 
+## `Flexbox` oraz `Grid`:
+
+`Flexbox` (_Flexible Box Layout_) i Grid to dwa modele układu w CSS, które pomagają w tworzeniu elastycznych i złożonych layoutów.
+
+### 1. Flexbox:
+
+- Cel: Flexbox ułatwia tworzenie jednokierunkowych układów (w poziomie lub w pionie).
+- Jak działa: Flexbox działa na kontenerach, w których umieszczamy elementy dzieci (tzw. `flex items`). Umożliwia ich rozmieszczenie, wyrównanie oraz dynamiczną zmianę rozmiaru w zależności od dostępnej przestrzeni.
+- Przykład zastosowania: Układy na stronie, w których elementy są ustawione w jednej linii (np. nagłówki, przyciski w menu).
+
+### 2. Grid:
+
+- Cel: 
+    - Grid jest bardziej zaawansowanym systemem, który pozwala na tworzenie dwuwymiarowych układów (zarówno w poziomie, jak i w pionie).
+- Jak działa: 
+    - Dzieli stronę na siatkę (kolumny i wiersze) i pozwala na precyzyjne rozmieszczenie elementów w tych komórkach. Można określić, które elementy zajmują określoną liczbę kolumn lub wierszy.
+- Przykład zastosowania: 
+    - Układy stron z wieloma sekcjami, np. layouty dla galerii zdjęć, dashboardów.
+
+### Pojęcia:
+
+1. `justify-content` (Flexbox):
+   - Określa rozmieszczenie elementów wzdłuż głównej osi (domyślnie poziomej).
+   - Działa w Flexboxie (kontener z `display: flex`).
+   - Wartości:
+        - `flex-start`: Wyrównanie do początku kontenera.
+        - `flex-end`: Wyrównanie do końca kontenera.
+        - `center`: Wyśrodkowanie elementów.
+        - `space-between`: Równomierne rozmieszczenie z przestrzenią między elementami.
+        - `space-around`: Równomierne rozmieszczenie z przestrzenią wokół elementów.
+        - `space-evenly`: Równomierne rozmieszczenie z równą przestrzenią wokół elementów.
+
+2. `align-items` (Flexbox i Grid):
+   - Określa wyrównanie elementów wzdłuż osi poprzecznej (domyślnie pionowej).
+   - Działa zarówno w Flexboxie, jak i w Gridzie.
+   - Wartości:
+        - `flex-start`: Wyrównanie do góry (Flexbox) / do początku wiersza (Grid).
+        - `flex-end`: Wyrównanie do dołu (Flexbox) / do końca wiersza (Grid).
+        - `center`: Wyśrodkowanie wzdłuż osi poprzecznej.
+        - `baseline`: Wyrównanie do linii bazowej tekstu.
+        - `stretch`: Rozciągnięcie elementów, aby wypełniły dostępne miejsce.
+
+3. `grid-template-columns` (Grid):
+   - Określa strukturę kolumn w siatce Grid.
+   - Definiuje liczbę kolumn oraz ich szerokość.
+   - Przykład: 
+     `grid-template-columns: 1fr 2fr 1fr;`
+        - Trzy kolumny, pierwsza i trzecia mają szerokość 1 fr, a środkowa 2 fr.
+
+4. `grid-template-rows` (Grid):
+   - Określa strukturę wierszy w siatce Grid.
+   - Definiuje liczbę wierszy oraz ich wysokość.
+   - Przykład: 
+    `grid-template-rows: 100px auto 200px;`
+        - Trzy wiersze: pierwszy ma wysokość 100px, drugi automatyczną wysokość, trzeci ma 200px.
+
