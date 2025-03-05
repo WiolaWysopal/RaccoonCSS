@@ -71,3 +71,117 @@ input[type="text"] {
     border: 2px solid blue;
 }
 ```
+
+## Model pudełkowy: 
+### 1. Co to jest model pudełkowy?
+Model pudełkowy (_Box Model_) w CSS określa sposób, w jaki przeglądarki interpretują i rozmieszczają elementy na stronie. Każdy element HTML traktowany jest jak prostokątne pudełko składające się z kilku warstw.
+
+### 2. Składniki modelu pudełkowego
+Każde pudełko składa się z następujących części:
+
+1. **Content (Zawartość)** – miejsce, w którym znajduje się treść elementu (tekst, obraz, inne elementy).
+2. **Padding (Wypełnienie)** – przestrzeń między zawartością a obramowaniem.
+3. **Border (Obramowanie)** – linia otaczająca element, oddzielająca go od innych.
+4. **Margin (Margines)** – przestrzeń wokół obramowania, oddzielająca elementy od siebie.
+
+### Wizualizacja:
+
+```ascii
+            Margin
++-------------------------------+
+|           Border              |
+|  +------------------------+   |
+|  |        Padding         |   |
+|  |  +------------------+  |   |
+|  |  |                  |  |   |
+|  |  |     Content      |  |   |
+|  |  |                  |  |   |
+|  |  +------------------+  |   |
+|  |                        |   |
+|  +------------------------+   |
+|                               |
++-------------------------------+
+```
+
+### Pozycjonowanie:
+
+1. `static` (domyślne pozycjonowanie):
+- Jest to domyślne ustawienie dla wszystkich elementów HTML.
+- Elementy są umieszczane w dokumencie według normalnego przepływu strony.
+- Nie można zmieniać ich położenia za pomocą `top`, `bottom`, `left`, `right`.
+
+Przykład:
+```css
+div {
+    position: static; /* domyślnie */
+}
+```
+
+2. `relative` (pozycjonowanie względne):
+- Element pozostaje w normalnym układzie dokumentu.
+- Można go przesuwać względem jego pierwotnej pozycji za pomocą `top`, `bottom`, `left`, `right`.
+- Przestrzeń, którą element zajmował, pozostaje pusta.
+
+Przykład:
+
+```css
+div {
+    position: relative;
+    top: 20px; /* Przesunięcie o 20px w dół */
+    left: 10px; /* Przesunięcie o 10px w prawo */
+}
+```
+
+3. `absolute` (pozycjonowanie absolutne):
+- Element jest usuwany z normalnego układu dokumentu.
+- Pozycjonuje się go względem najbliższego nadrzędnego elementu z `position`: `relative` lub `absolute` (jeśli takiego nie ma, to względem `body`).
+- Można używać `top`, `bottom`, `left`, `right` do dokładnego określenia położenia.
+
+Przykład:
+
+```css
+/* W tym przykładzie `child` jest umieszczony 50px od góry i 100px od lewej krawędzi `.container` (bo `.container` ma `position: relative`). */
+.container {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+```
+
+4. `fixed` (pozycjonowanie stałe):
+- Element jest usuwany z normalnego układu dokumentu.
+- Jest pozycjonowany względem widocznego obszaru przeglądarki (`viewport`).
+- Pozostaje w tej samej pozycji nawet podczas przewijania strony.
+
+Przykład:
+
+```css
+/* Przydatne do tworzenia pasków nawigacyjnych lub przycisków zawsze widocznych na ekranie. */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    padding: 10px;
+}
+```
+
+5. `sticky` (pozycjonowanie "przyklejone"):
+- Element działa jak relative, dopóki użytkownik nie przewinie strony do określonej pozycji, gdzie staje się `fixed`.
+- Wymaga określenia `top`, `bottom`, `left` lub `right` do określenia momentu "przyklejenia".
+
+```css
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
+    padding: 10px;
+}
+```
+

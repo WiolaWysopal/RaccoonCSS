@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: forestgreen;
+    background-color: rgb(253, 219, 179);
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: static;
+    border: 2px solid forestgreen;
+}
+
+h2 {
+    color: rgba(41, 158, 158, 0.8);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.firstdiv {
+    position: relative;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div[class] {
+    padding: 1rem;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.static {
+    position: static;
+    background-color: lightgray;
+}
+
+/* RELATIVE - przesunięcie względem normalnej pozycji */
+.relative {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    background-color: lightblue;
+}
+
+/* ABSOLUTE - pozycja względem .firstdiv */
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: lightcoral;
+    width: 150px;
+}
+
+/* FIXED - zawsze widoczny w tym samym miejscu */
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: darkorange;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* STICKY - przykleja się po przewinięciu */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: palegreen;
+    border: 2px dashed black;
+}
