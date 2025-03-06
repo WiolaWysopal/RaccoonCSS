@@ -1,0 +1,106 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1, p{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(115, 46, 46);
+    font-size: 1.5rem;
+}
+
+/* PSEUDOCLASSES */
+
+.pseudoclasses {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sample-pseudoclasses {
+    background-color: cadetblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.2rem;
+}
+
+.sample-pseudoclasses:hover {
+    background-color: rgb(25, 66, 67);
+}
+
+a:active {
+    color: blue;
+}
+
+button:focus {
+    color:blueviolet;
+}
+
+/* PSEUDOELEMENTS */
+
+.pseudoelements {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    /* gap: 1rem; */
+}
+
+.sample-pseudoelements {
+    background-color: rgb(249, 55, 6);
+    min-height: fit-content;
+    font-size: 3rem;
+    padding: 0.2rem;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.2rem;
+    margin: 2rem;
+}
+
+.sample-pseudoelements:hover {
+    background-color: rgb(160, 8, 8);
+}
+
+.sample-pseudoelements::before {
+    content: "🦝";
+}
+
+.sample-pseudoelements::after {
+    content: "🧛";
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    .pseudoclasses {
+        flex-direction: column;
+    }
+
+    .sample-pseudoclasses {
+        font-size: 3rem;
+    }
+
+    .pseudoelements {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .sample-pseudoelements {
+        font-size: 3rem;
+    }
+  }
+

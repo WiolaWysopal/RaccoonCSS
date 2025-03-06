@@ -241,3 +241,10 @@ Przykład:
     `grid-template-rows: 100px auto 200px;`
         - Trzy wiersze: pierwszy ma wysokość 100px, drugi automatyczną wysokość, trzeci ma 200px.
 
+## Pseudoklasy i pseudoelementy:
+
+- `:hover` – stosuje styl do elementu, gdy użytkownik najedzie na niego kursorem.
+- `:active` – stosuje styl do elementu w momencie jego aktywacji, np. podczas kliknięcia.
+- `:focus` – stosuje styl do elementu, gdy znajduje się on w stanie aktywnego fokusu, np. po kliknięciu lub nawigacji klawiaturą.
+- `::before` – dodaje generowany element przed zawartością wybranego elementu.
+- `::after` – dodaje generowany element po zawartości wybranego elementu.
