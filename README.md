@@ -253,3 +253,10 @@ Przykład:
 
 - `Animation` – pozwala tworzyć bardziej złożone animacje CSS poprzez definiowanie klatek kluczowych w `@keyframes`.
 - `Transition` – umożliwia płynne przejście między dwiema wartościami właściwości CSS po wystąpieniu zdarzenia, np. `:hover`.
+
+## Responsive Design i Media Queries:
+
+- `Media queries` to technika w CSS, która pozwala na stosowanie różnych stylów w zależności od cech urządzenia, takich jak szerokość ekranu czy jego orientacja.
+- `Responsive design` to podejście do projektowania stron internetowych, które zapewnia ich optymalne wyświetlanie na różnych urządzeniach i rozdzielczościach ekranów.
+- `Breakpoints` to określone punkty w kodzie CSS, które definiują zmiany w układzie strony przy określonych szerokościach ekranu, aby dostosować jej wygląd do różnych urządzeń.
+
