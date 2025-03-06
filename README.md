@@ -260,3 +260,10 @@ Przykład:
 - `Responsive design` to podejście do projektowania stron internetowych, które zapewnia ich optymalne wyświetlanie na różnych urządzeniach i rozdzielczościach ekranów.
 - `Breakpoints` to określone punkty w kodzie CSS, które definiują zmiany w układzie strony przy określonych szerokościach ekranu, aby dostosować jej wygląd do różnych urządzeń.
 
+## Zmienne CSS:
+
+Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie wartości, które można wielokrotnie wykorzystywać w arkuszu stylów. Zmienna jest zdefiniowana za pomocą `--` na początku nazwy (np. `--primary-color: #ff5733;`), a następnie używana w innych regułach CSS za pomocą funkcji `var()`, np. `color: var(--primary-color);`. Dzięki temu łatwiej zarządzać i zmieniać wartości w całym projekcie.
+
+### `:root`:
+
+`:root` to pseudo-klasa CSS, która odnosi się do najwyższego elementu w drzewie DOM, którym jest element `<html>` w dokumencie HTML. Jest to miejsce, gdzie zwykle definiuje się globalne zmienne CSS, ponieważ zmienne zdefiniowane w `:root` mają zakres na cały dokument, co pozwala na ich użycie w różnych częściach strony. Definiowanie zmiennych w `:root` zapewnia spójność i łatwość w zarządzaniu stylami na całej stronie.
