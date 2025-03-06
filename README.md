@@ -248,3 +248,8 @@ Przykład:
 - `:focus` – stosuje styl do elementu, gdy znajduje się on w stanie aktywnego fokusu, np. po kliknięciu lub nawigacji klawiaturą.
 - `::before` – dodaje generowany element przed zawartością wybranego elementu.
 - `::after` – dodaje generowany element po zawartości wybranego elementu.
+
+## Animacje i przejścia
+
+- `Animation` – pozwala tworzyć bardziej złożone animacje CSS poprzez definiowanie klatek kluczowych w `@keyframes`.
+- `Transition` – umożliwia płynne przejście między dwiema wartościami właściwości CSS po wystąpieniu zdarzenia, np. `:hover`.
