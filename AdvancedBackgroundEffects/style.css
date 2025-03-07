@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+:root {
+    --basic-color: #ffebcd;
+    --headers-color: #6305f1;
+    --text-color: #9b0487;
+    --font: "Goudy Bookletter 1911", serif;
+    --text-size: 2.5rem;
+    --blurring: 1px;
+    --brightness: 150%;
+}
+
+body {
+    background-image:
+        radial-gradient(circle, rgba(255, 192, 203, 0.5) 20%, rgba(255, 140, 0, 0.5) 80%),
+        linear-gradient(to right, rgba(235, 1, 165, 0.5), rgba(209, 53, 49, 0.5)),
+        url('background.jpg');
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    margin: 0;
+    min-height: 97.2vh;  
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--headers-color);
+    font-family: var(--font);
+    font-size: var(--text-size);
+    margin: 1.25rem;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-family: var(--font);
+    color: var(--text-color);
+    font-size: var(--text-size);
+    margin: 0.25rem;
+}
+
+.imagecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    border-style: solid;
+    border-width: .2rem;
+    padding: 0.2rem;
+}
+
+
+.animatedraccoon {
+    transition:
+        width 2s,
+        height 2s,
+        background-color 2s,
+        transform 2s;
+}
+
+.animatedraccoon:hover {
+    transform: rotate(30deg);
+    width: 300px;
+    height: 300px;
+    background-color: var(--basic-color);
+}
+
+.animatedrat:hover {
+    filter: blur(var(--blurring));
+    backdrop-filter: brightness(var(--brightness));
+}
+
+@keyframes rabbit {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(270deg); }
+}
+
+.animatedrabbit:hover {
+    animation: rabbit 4s infinite alternate;
+}
+
+/* TABLETS */
+
+
+
+@media (max-width: 1200px) {
+    .imagecontainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img {
+        transform: scale(0.75);
+        margin: 0.5rem;
+    }
+
+    p, h1 {
+        transform: scale(0.8);
+    }
+}
+
+/* SMARTPHONES */
+
+@media (max-width: 730px) {
+    .imagecontainer {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    img {
+        transform: scale(0.5);
+        margin: 0.25rem;
+    }
+
+    p, h1 {
+        transform: scale(0.65);
+    }
+}

@@ -276,3 +276,12 @@ Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie warto�
 - `scale` – powiększa lub pomniejsza element względem jego oryginalnego rozmiaru.
 - `blur` – tworzy efekt rozmycia, sprawiając, że element staje się mniej wyraźny.
 - `brightness` – zmienia jasność elementu, czyniąc go jaśniejszym lub ciemniejszym.
+
+## Zaawansowane efekty tła:
+
+- `background-image` – ustawia obraz jako tło elementu, umożliwiając stosowanie grafik w tle strony.
+- `linear-gradient` – tworzy płynne przejście kolorów w określonym kierunku, np. pionowo lub poziomo.
+- `radial-gradient` – generuje gradient promieniowy, w którym kolory rozchodzą się od środka na zewnątrz.
+- `background-repeat` – określa sposób powtarzania obrazu tła, np. w poziomie, pionie lub wyłączenie powtarzania.
+- `background-position` – definiuje położenie obrazu tła w elemencie, np. na środku lub w rogu.
+- `background-size` – kontroluje rozmiar obrazu tła, umożliwiając jego skalowanie do wymiarów elementu.
