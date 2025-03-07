@@ -267,3 +267,12 @@ Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie warto�
 ### `:root`:
 
 `:root` to pseudo-klasa CSS, która odnosi się do najwyższego elementu w drzewie DOM, którym jest element `<html>` w dokumencie HTML. Jest to miejsce, gdzie zwykle definiuje się globalne zmienne CSS, ponieważ zmienne zdefiniowane w `:root` mają zakres na cały dokument, co pozwala na ich użycie w różnych częściach strony. Definiowanie zmiennych w `:root` zapewnia spójność i łatwość w zarządzaniu stylami na całej stronie.
+
+## Filtry i transformacje:
+
+- `transform` – służy do przekształcania elementów na stronie, np. obracania, skalowania czy przesuwania.
+- `filter` – pozwala na stosowanie efektów wizualnych, takich jak rozmycie czy zmiana jasności, do elementów.
+- `rotate` – obraca element o określony kąt wokół jego środka lub innego punktu.
+- `scale` – powiększa lub pomniejsza element względem jego oryginalnego rozmiaru.
+- `blur` – tworzy efekt rozmycia, sprawiając, że element staje się mniej wyraźny.
+- `brightness` – zmienia jasność elementu, czyniąc go jaśniejszym lub ciemniejszym.

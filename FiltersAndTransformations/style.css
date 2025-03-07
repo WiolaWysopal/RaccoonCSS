@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+:root {
+    --basic-color: #ffebcd;
+    --headers-color: #6305f1;
+    --text-color: #9b0487;
+    --font: "Goudy Bookletter 1911", serif;
+    --text-size: 2.5rem;
+    --blurring: 1px;
+    --brightness: 150%;
+}
+
+body {
+    background-color: var(--basic-color);
+}
+
+h1 {
+    color: var(--headers-color);
+    font-family: var(--font);
+    font-size: var(--text-size);
+    margin: 1.25rem;
+}
+
+p{
+    font-family: var(--font);
+    color: var(--text-color);
+    font-size: var(--text-size);
+    margin: 0.25rem;
+}
+
+.imagecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    margin: 2.5rem;
+    border-style: solid;
+    border-width: .2rem;
+    padding: 0.2rem;
+}
+.animatedraccoon {
+    transition:
+        width 2s,
+        height 2s,
+        background-color 2s,
+        transform 2s;
+}
+
+.animatedraccoon:hover {
+    transform: rotate(30deg);
+    width: 300px;
+    height: 300px;
+    background-color: var(--basic-color);
+}
+
+.animatedrat:hover {
+    filter: blur(var(--blurring));
+    backdrop-filter: brightness(var(--brightness));
+}
+
+@keyframes rabbit {
+    from { filter: hue-rotate(0deg); }
+    to { filter: hue-rotate(270deg); }
+  }
+
+.animatedrabbit:hover {
+    animation: rabbit 4s infinite alternate;
+}
+
+/* TABLETS */
+
+@media (max-width: 1200px) {
+    .imagecontainer {
+        display: flex; /* Pozostawienie flexboxa, zamiast bloku */
+        flex-wrap: wrap; /* Zapewnia lepsze dopasowanie na mniejszych ekranach */
+        justify-content: center;
+        gap: 0.5rem; /* Zmniejszenie odstępu */
+    }
+
+    img {
+        transform: scale(0.75);
+        margin: 0.5rem;
+    }
+
+    p, h1 {
+        transform: scale(0.8);
+    }
+}
+
+/* SMARTPHONES */
+
+@media (max-width: 730px) {
+    .imagecontainer {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    img {
+        transform: scale(0.5);
+        margin: 0.25rem;
+    }
+
+    p, h1 {
+        transform: scale(0.65);
+    }
+}
+
