@@ -1,0 +1,49 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1, p{
+    text-align: center;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(115, 46, 46);
+    font-size: 1.5rem;
+}
+
+/* FLEX */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sample-flex {
+    background-color: cadetblue;
+    font-size: 7rem;
+    text-align: center;
+    border-style: solid;
+    border-width: 0.2rem;
+}
+
+.sample-flex:hover {
+    background-color: rgb(25, 66, 67);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .sample-flex {
+        font-size: 3rem;
+    }
+
+  }
+
