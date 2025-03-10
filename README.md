@@ -285,3 +285,11 @@ Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie warto�
 - `background-repeat` – określa sposób powtarzania obrazu tła, np. w poziomie, pionie lub wyłączenie powtarzania.
 - `background-position` – definiuje położenie obrazu tła w elemencie, np. na środku lub w rogu.
 - `background-size` – kontroluje rozmiar obrazu tła, umożliwiając jego skalowanie do wymiarów elementu.
+
+## Responsywność:
+
+`flex-wrap` – właściwość CSS w ramach modelu Flexbox, która decyduje, czy elementy w kontenerze mogą zawijać się do nowych wierszy, gdy braknie miejsca w jednym wierszu.
+
+`media queries` – technika CSS pozwalająca na stosowanie różnych stylów w zależności od charakterystyki urządzenia, takich jak rozdzielczość ekranu, szerokość, wysokość itp.
+
+`responsywny design` – podejście do projektowania stron internetowych, które zapewnia ich optymalny wygląd i funkcjonalność na różnych urządzeniach, niezależnie od wielkości ekranu.
