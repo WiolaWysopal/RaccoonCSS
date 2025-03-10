@@ -288,8 +288,13 @@ Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie warto�
 
 ## Responsywność:
 
-`flex-wrap` – właściwość CSS w ramach modelu Flexbox, która decyduje, czy elementy w kontenerze mogą zawijać się do nowych wierszy, gdy braknie miejsca w jednym wierszu.
+- `flex-wrap` – właściwość CSS w ramach modelu Flexbox, która decyduje, czy elementy w kontenerze mogą zawijać się do nowych wierszy, gdy braknie miejsca w jednym wierszu.
 
-`media queries` – technika CSS pozwalająca na stosowanie różnych stylów w zależności od charakterystyki urządzenia, takich jak rozdzielczość ekranu, szerokość, wysokość itp.
+- `media queries` – technika CSS pozwalająca na stosowanie różnych stylów w zależności od charakterystyki urządzenia, takich jak rozdzielczość ekranu, szerokość, wysokość itp.
 
-`responsywny design` – podejście do projektowania stron internetowych, które zapewnia ich optymalny wygląd i funkcjonalność na różnych urządzeniach, niezależnie od wielkości ekranu.
+- `responsywny design` – podejście do projektowania stron internetowych, które zapewnia ich optymalny wygląd i funkcjonalność na różnych urządzeniach, niezależnie od wielkości ekranu.
+
+- `align-self` – właściwość CSS, która pozwala nadpisać ustawienia wyrównania dla pojedynczego elementu w kontenerze flex, decydując, jak ten element ma być wyrównany względem osi poprzecznej (np. na osi pionowej, jeśli flex jest ustawiony w poziomie).
+
+- `align-content` – właściwość CSS, która kontroluje rozmieszczenie całych linii w kontenerze flex, gdy elementy są zawinięte (np. w przypadku używania flex-wrap), decydując, jak wolne przestrzenie między tymi liniami mają być rozmieszczone wzdłuż osi poprzecznej.
+
