@@ -298,3 +298,14 @@ Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie warto�
 
 - `align-content` – właściwość CSS, która kontroluje rozmieszczenie całych linii w kontenerze flex, gdy elementy są zawinięte (np. w przypadku używania flex-wrap), decydując, jak wolne przestrzenie między tymi liniami mają być rozmieszczone wzdłuż osi poprzecznej.
 
+### `Grid Template Areas`:
+
+`grid-template-areas` to właściwość CSS używana w _CSS Grid_, która pozwala definiować układ siatki za pomocą nazwanych obszarów. Dzięki niej można łatwo określić, które elementy mają zajmować konkretne miejsca w siatce, co sprawia, że kod jest bardziej czytelny i łatwiejszy do zarządzania.
+
+#### Jak działa?
+
+1. Tworzy wizualną reprezentację siatki przy użyciu nazwanych obszarów.
+2. Każda nazwa odpowiada jednej komórce lub grupie komórek w siatce.
+3. Można używać `.` (kropki) do oznaczenia pustych miejsc.
+4. Układ określa się w cudzysłowach, gdzie każda linia to jeden wiersz.
+
