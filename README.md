@@ -309,3 +309,13 @@ Zmienne CSS (_variables CSS_) to mechanizm umożliwiający przechowywanie warto�
 3. Można używać `.` (kropki) do oznaczenia pustych miejsc.
 4. Układ określa się w cudzysłowach, gdzie każda linia to jeden wiersz.
 
+## Typografia w CSS:
+
+- `font-family` – określa czcionkę lub zestaw czcionek używanych do wyświetlania tekstu.
+- `font-weight` – kontroluje grubość czcionki (np. normal, bold, 100–900).
+- `line-height` – ustawia wysokość linii tekstu, wpływając na odstępy między wierszami.
+- `text-align` – definiuje poziome wyrównanie tekstu (np. left, center, right, justify).
+- `text-decoration` – dodaje efekty, takie jak podkreślenie, przekreślenie lub nadkreślenie tekstu.
+- `letter-spacing` – określa odstęp między poszczególnymi literami w tekście.
+- `word-spacing` – kontroluje odstęp między słowami w tekście.
+
