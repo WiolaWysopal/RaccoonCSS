@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RacconCSS</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p>This is form styling.</p>
+
+    <div class="form">
+        <form method="GET" action="newpage.html">
+        <div class="name">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+        </div>
+
+        <div class="surname">
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname"><br>
+        </div>
+
+        <div class="adultness">
+            <label for="adult">Are you an adult?</label><br>
+            <input type="radio" id="adultyes" name="adult" value="Yes">
+            <label for="adultyes">Yes</label><br>
+            <input type="radio" id="adultno" name="adult" value="No">
+            <label for="adultno">No</label><br>
+        </div>
+
+        <div class="interests">
+            <label for="interests">Choose your interests:</label><br>
+            <input type="checkbox" id="arts" name="interests" value="arts">
+            <label for="arts"> Arts </label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music"> Music </label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding"> Coding </label><br>
+        </div>
+            
+        <div class="button"><button type="submit">Submit form</button></div>
+        </form>
+    </div>
+</body>
+</html>
+

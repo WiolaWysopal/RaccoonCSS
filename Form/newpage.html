@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Data</title>
+</head>
+<body>
+    <h1>Submitted Data</h1>
+    <div id="result"></div>
+
+    <script>
+        let params = new URLSearchParams(window.location.search);
+        let resultDiv = document.getElementById("result");
+    
+        params.forEach((value, key) => {
+            let p = document.createElement("p");
+    
+            // Sprawdź, czy klucz już istnieje
+            if (document.getElementById(key)) {
+                let existingP = document.getElementById(key);
+                existingP.textContent += `, ${value}`;
+            } else {
+                p.textContent = `${key}: ${value}`;
+                p.id = key;
+                resultDiv.appendChild(p);
+            }
+        });
+    </script>
+    
+</body>
+</html>
